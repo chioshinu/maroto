@@ -5,20 +5,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/generation"
+	"github.com/chioshinu/maroto/v2/pkg/consts/generation"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/extension"
+	"github.com/chioshinu/maroto/v2/pkg/consts/extension"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/orientation"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/consts/orientation"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/protection"
+	"github.com/chioshinu/maroto/v2/pkg/consts/protection"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontfamily"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
-	"github.com/johnfercher/maroto/v2/pkg/consts/pagesize"
-	"github.com/johnfercher/maroto/v2/pkg/consts/provider"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/consts/fontfamily"
+	"github.com/chioshinu/maroto/v2/pkg/consts/fontstyle"
+	"github.com/chioshinu/maroto/v2/pkg/consts/pagesize"
+	"github.com/chioshinu/maroto/v2/pkg/consts/provider"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 // Builder is the abstraction responsible for global customizations on the document.
@@ -236,7 +236,8 @@ func (b *CfgBuilder) WithPageNumber(pageNumber ...props.PageNumber) Builder {
 		pageN = pageNumber[0]
 	}
 
-	if !strings.Contains(pageN.Pattern, "{current}") || !strings.Contains(pageN.Pattern, "{total}") {
+	// pagination must contain {current} or {total} to be valid
+	if !(strings.Contains(pageN.Pattern, "{current}") || strings.Contains(pageN.Pattern, "{total}")) {
 		pageN.Pattern = "{current} / {total}"
 	}
 

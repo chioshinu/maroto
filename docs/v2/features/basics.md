@@ -1,14 +1,14 @@
 # Basics
 
 ## GoDoc
-* [maroto : New](https://pkg.go.dev/github.com/johnfercher/maroto/v2#New)
-* [maroto : AddRow](https://pkg.go.dev/github.com/johnfercher/maroto/v2#Maroto.AddRow)
-* [maroto : AddRows](https://pkg.go.dev/github.com/johnfercher/maroto/v2#Maroto.AddRows)
-* [maroto : Generate](https://pkg.go.dev/github.com/johnfercher/maroto/v2#Maroto.Generate)
-* [row : New](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/row#New)
-* [row : Add](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/row#Row.Add)
-* [col : New](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/col#New)
-* [col : Add](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/col#Col.Add)
+* [maroto : New](https://pkg.go.dev/github.com/chioshinu/maroto/v2#New)
+* [maroto : AddRow](https://pkg.go.dev/github.com/chioshinu/maroto/v2#Maroto.AddRow)
+* [maroto : AddRows](https://pkg.go.dev/github.com/chioshinu/maroto/v2#Maroto.AddRows)
+* [maroto : Generate](https://pkg.go.dev/github.com/chioshinu/maroto/v2#Maroto.Generate)
+* [row : New](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/row#New)
+* [row : Add](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/row#Row.Add)
+* [col : New](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/col#New)
+* [col : Add](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/col#Col.Add)
 
 ### Components
 * [Barcode](v2/features/barcode?id=barcode)

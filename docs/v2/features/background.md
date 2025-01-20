@@ -1,8 +1,8 @@
 # Add Background
 
 ## GoDoc
-* [builder : WithBackgroundImage](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithBackgroundImage)
-* [consts : Extension](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/consts/extension#Type)
+* [builder : WithBackgroundImage](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithBackgroundImage)
+* [consts : Extension](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/consts/extension#Type)
 
 ## Code Example
 [filename](../../assets/examples/background/v2/main.go  ':include :type=code')

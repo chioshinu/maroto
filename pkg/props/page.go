@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/align"
-	"github.com/johnfercher/maroto/v2/pkg/consts/breakline"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
+	"github.com/chioshinu/maroto/v2/pkg/consts/align"
+	"github.com/chioshinu/maroto/v2/pkg/consts/breakline"
+	"github.com/chioshinu/maroto/v2/pkg/consts/fontstyle"
 )
 
 // Place is the representation of a place in a page.
@@ -25,12 +25,14 @@ const (
 	Bottom Place = "bottom"
 	// RightBottom is the place in the right bottom of the page.
 	RightBottom Place = "right_bottom"
+	// Custom is the place in a custom position of the page in footer.
+	Custom Place = "custom"
 )
 
 // IsValid checks if the place is valid.
 func (p Place) IsValid() bool {
 	return p == LeftTop || p == Top || p == RightTop ||
-		p == LeftBottom || p == Bottom || p == RightBottom
+		p == LeftBottom || p == Bottom || p == RightBottom || p == Custom
 }
 
 // PageNumber have attributes of page number

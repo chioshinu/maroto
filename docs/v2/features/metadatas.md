@@ -1,12 +1,12 @@
 # Metadatas
 
 ## GoDoc
-* [builder : WithAuthor](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithAuthor)
-* [builder : WithCreationDate](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithCreationDate)
-* [builder : WithCreator](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithCreator)
-* [builder : WithSubject](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithSubject)
-* [builder : WithTitle](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithTitle)
-* [builder : WithKeywords](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithKeywords)
+* [builder : WithAuthor](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithAuthor)
+* [builder : WithCreationDate](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithCreationDate)
+* [builder : WithCreator](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithCreator)
+* [builder : WithSubject](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithSubject)
+* [builder : WithTitle](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithTitle)
+* [builder : WithKeywords](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithKeywords)
 
 ## Code Example
 [filename](../../assets/examples/metadatas/v2/main.go ':include :type=code')

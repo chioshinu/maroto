@@ -1,7 +1,7 @@
 # Disable Auto Page Break
 
 ## GoDoc
-* [builder : WithDisableAutoPageBreak](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithDisableAutoPageBreak)
+* [builder : WithDisableAutoPageBreak](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithDisableAutoPageBreak)
 
 ## Code Example
 [filename](../../assets/examples/disablepagebreak/v2/main.go ':include :type=code')

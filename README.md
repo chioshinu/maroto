@@ -1,13 +1,13 @@
 # Maroto V2
 
-[![GoDoc](https://godoc.org/github.com/johnfercher/maroto?status.svg)](https://pkg.go.dev/github.com/johnfercher/maroto/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/johnfercher/maroto)](https://goreportcard.com/report/github.com/johnfercher/maroto)
+[![GoDoc](https://godoc.org/github.com/chioshinu/maroto?status.svg)](https://pkg.go.dev/github.com/chioshinu/maroto/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/chioshinu/maroto)](https://goreportcard.com/report/github.com/chioshinu/maroto)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go#template-engines)  
-[![CI](https://github.com/johnfercher/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/goci.yml)
-[![Lint](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml)
+[![CI](https://github.com/chioshinu/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/chioshinu/maroto/actions/workflows/goci.yml)
+[![Lint](https://github.com/chioshinu/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/chioshinu/maroto/actions/workflows/golangci-lint.yml)
 [![Codecov](https://img.shields.io/codecov/c/github/johnfercher/maroto)](https://codecov.io/gh/johnfercher/maroto)
 [![Visits Badge](https://badges.pufler.dev/visits/johnfercher/maroto)](https://badges.pufler.dev)
-[![Stars Badge](https://img.shields.io/github/stars/johnfercher/maroto.svg?style=social&label=Stars)](https://github.com/johnfercher/maroto/stargazers)
+[![Stars Badge](https://img.shields.io/github/stars/johnfercher/maroto.svg?style=social&label=Stars)](https://github.com/chioshinu/maroto/stargazers)
 
 
 A Maroto way to create PDFs. Maroto is inspired in Bootstrap and uses [Gofpdf](https://github.com/jung-kurt/gofpdf). Fast and simple.
@@ -25,11 +25,11 @@ always when a new page appear, in this case, a header may have many rows, lines 
 * Installation with`go get`:
 
 ```bash
-go get github.com/johnfercher/maroto/v2@v2.2.2
+go get github.com/chioshinu/maroto/v2@v2.2.2
 ```
 
 * You can see the full `v2` documentation [here](https://maroto.io/).
-* The `v1` still exists in [this branch](https://github.com/johnfercher/maroto/tree/v1), and you can see the doc [here](https://maroto.io/#/v1/README?id=deprecated).
+* The `v1` still exists in [this branch](https://github.com/chioshinu/maroto/tree/v1), and you can see the doc [here](https://maroto.io/#/v1/README?id=deprecated).
 
 ![result](docs/assets/images/result.png)
 

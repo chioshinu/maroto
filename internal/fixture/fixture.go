@@ -3,17 +3,17 @@ package fixture
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/align"
-	"github.com/johnfercher/maroto/v2/pkg/consts/border"
-	"github.com/johnfercher/maroto/v2/pkg/consts/breakline"
-	"github.com/johnfercher/maroto/v2/pkg/consts/extension"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontfamily"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
-	"github.com/johnfercher/maroto/v2/pkg/consts/linestyle"
-	"github.com/johnfercher/maroto/v2/pkg/consts/orientation"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/consts/align"
+	"github.com/chioshinu/maroto/v2/pkg/consts/border"
+	"github.com/chioshinu/maroto/v2/pkg/consts/breakline"
+	"github.com/chioshinu/maroto/v2/pkg/consts/extension"
+	"github.com/chioshinu/maroto/v2/pkg/consts/fontfamily"
+	"github.com/chioshinu/maroto/v2/pkg/consts/fontstyle"
+	"github.com/chioshinu/maroto/v2/pkg/consts/linestyle"
+	"github.com/chioshinu/maroto/v2/pkg/consts/orientation"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 // TextProp is responsible to give a valid props.Text.

@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
+	"github.com/chioshinu/maroto/v2/pkg/components/text"
 
 	"github.com/johnfercher/go-tree/node"
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/core"
 
-	"github.com/johnfercher/maroto/v2/mocks"
-	"github.com/johnfercher/maroto/v2/pkg/components/page"
+	"github.com/chioshinu/maroto/v2/mocks"
+	"github.com/chioshinu/maroto/v2/pkg/components/page"
 	"github.com/stretchr/testify/assert"
 )
 

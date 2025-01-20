@@ -2,10 +2,10 @@ package maroto
 
 import (
 	"github.com/johnfercher/go-tree/node"
-	"github.com/johnfercher/maroto/v2/internal/time"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/metrics"
+	"github.com/chioshinu/maroto/v2/internal/time"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/metrics"
 )
 
 type MetricsDecorator struct {

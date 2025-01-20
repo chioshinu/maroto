@@ -1,11 +1,11 @@
 package code_test
 
 import (
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 
-	"github.com/johnfercher/maroto/v2"
-	"github.com/johnfercher/maroto/v2/pkg/components/code"
+	"github.com/chioshinu/maroto/v2"
+	"github.com/chioshinu/maroto/v2/pkg/components/code"
 )
 
 // ExampleNewBar demonstrates how to generate a barcode and add it to maroto.

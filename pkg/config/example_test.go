@@ -1,9 +1,9 @@
 package config_test
 
 import (
-	"github.com/johnfercher/maroto/v2"
-	"github.com/johnfercher/maroto/v2/pkg/config"
-	"github.com/johnfercher/maroto/v2/pkg/consts/pagesize"
+	"github.com/chioshinu/maroto/v2"
+	"github.com/chioshinu/maroto/v2/pkg/config"
+	"github.com/chioshinu/maroto/v2/pkg/consts/pagesize"
 )
 
 // ExampleNewBuilder demonstrates how to use builder.

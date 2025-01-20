@@ -1,11 +1,11 @@
 # Text
 
 ## GoDoc
-* [constructor : New](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/text#New)
-* [constructor : NewCol](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/text#NewCol)
-* [constructor : NewRow](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/text#NewRow)
-* [props : Text](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/props#Text)
-* [component : Text](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/text#Text)
+* [constructor : New](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/text#New)
+* [constructor : NewCol](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/text#NewCol)
+* [constructor : NewRow](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/text#NewRow)
+* [props : Text](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/props#Text)
+* [component : Text](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/text#Text)
 
 
 ## Code Example

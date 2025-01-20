@@ -5,11 +5,11 @@ package code
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 type Barcode struct {
@@ -94,3 +94,5 @@ func (b *Barcode) GetHeight(provider core.Provider, cell *entity.Cell) float64 {
 func (b *Barcode) SetConfig(config *entity.Config) {
 	b.config = config
 }
+
+func (b *Barcode) SetTransform(transform core.TextTransformer) {}

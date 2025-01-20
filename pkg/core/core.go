@@ -4,10 +4,12 @@ package core
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/metrics"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/metrics"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
+
+type TextTransformer func(value string) string
 
 // Maroto is the interface that wraps the basic methods of maroto.
 type Maroto interface {
@@ -43,6 +45,7 @@ type Component interface {
 	Node
 	Render(provider Provider, cell *entity.Cell)
 	GetHeight(provider Provider, cell *entity.Cell) float64
+	SetTransform(transform TextTransformer)
 }
 
 // Col is the interface that wraps the basic methods of a col.
@@ -53,6 +56,7 @@ type Col interface {
 	GetHeight(provider Provider, cell *entity.Cell) float64
 	WithStyle(style *props.Cell) Col
 	Render(provider Provider, cell entity.Cell, createCell bool)
+	SetTransform(transform TextTransformer)
 }
 
 // Row is the interface that wraps the basic methods of a row.
@@ -69,6 +73,7 @@ type Row interface {
 type Page interface {
 	Node
 	Add(rows ...Row) Page
+	AddFooter(rows ...Row)
 	GetRows() []Row
 	GetNumber() int
 	SetNumber(number int, total int)

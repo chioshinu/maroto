@@ -1,8 +1,8 @@
 # Protection
 
 ## GoDoc
-* [builder : WithProtection](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithProtection)
-* [protection : Type](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/consts/protection)
+* [builder : WithProtection](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithProtection)
+* [protection : Type](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/consts/protection)
 
 ## Code Example
 [filename](../../assets/examples/protection/v2/main.go ':include :type=code')

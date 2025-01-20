@@ -1,8 +1,8 @@
 # Custom Page
 
 ## GoDoc
-* [builder : WithPageSize](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithPageSize)
-* [pagesize : Type](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/consts/pagesize)
+* [builder : WithPageSize](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/config#CfgBuilder.WithPageSize)
+* [pagesize : Type](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/consts/pagesize)
 
 ## Code Example
 [filename](../../assets/examples/custompage/v2/main.go ':include :type=code')

@@ -3,8 +3,8 @@
 package mocks
 
 import (
-	core "github.com/johnfercher/maroto/v2/pkg/core"
-	entity "github.com/johnfercher/maroto/v2/pkg/core/entity"
+	core "github.com/chioshinu/maroto/v2/pkg/core"
+	entity "github.com/chioshinu/maroto/v2/pkg/core/entity"
 
 	mock "github.com/stretchr/testify/mock"
 
@@ -184,6 +184,8 @@ func (_c *Component_SetConfig_Call) RunAndReturn(run func(*entity.Config)) *Comp
 	_c.Call.Return(run)
 	return _c
 }
+
+func (_m *Component) SetTransform(transform core.TextTransformer) {}
 
 // NewComponent creates a new instance of Component. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 // The first argument is typically a *testing.T value.

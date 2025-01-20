@@ -3,17 +3,17 @@ package main
 import (
 	"log"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/line"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/line"
 
-	"github.com/johnfercher/maroto/v2"
+	"github.com/chioshinu/maroto/v2"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/code"
-	"github.com/johnfercher/maroto/v2/pkg/components/image"
-	"github.com/johnfercher/maroto/v2/pkg/components/signature"
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
+	"github.com/chioshinu/maroto/v2/pkg/components/code"
+	"github.com/chioshinu/maroto/v2/pkg/components/image"
+	"github.com/chioshinu/maroto/v2/pkg/components/signature"
+	"github.com/chioshinu/maroto/v2/pkg/components/text"
 )
 
 func main() {

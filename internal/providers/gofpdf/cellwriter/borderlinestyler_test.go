@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/mocks"
-	"github.com/johnfercher/maroto/v2/pkg/consts/linestyle"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/mocks"
+	"github.com/chioshinu/maroto/v2/pkg/consts/linestyle"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 
-	"github.com/johnfercher/maroto/v2/internal/providers/gofpdf/cellwriter"
+	"github.com/chioshinu/maroto/v2/internal/providers/gofpdf/cellwriter"
 
 	"github.com/stretchr/testify/assert"
 )

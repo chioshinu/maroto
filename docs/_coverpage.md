@@ -9,7 +9,7 @@
 * Testable
 * **At least 2x faster than V1**
 
-[Github](https://github.com/johnfercher/maroto)
+[Github](https://github.com/chioshinu/maroto)
 [See](README.md)
 
 ![](assets/images/background.svg)

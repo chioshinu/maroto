@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/internal/fixture"
-	"github.com/johnfercher/maroto/v2/pkg/components/list"
-	"github.com/johnfercher/maroto/v2/pkg/components/page"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/test"
+	"github.com/chioshinu/maroto/v2/internal/fixture"
+	"github.com/chioshinu/maroto/v2/pkg/components/list"
+	"github.com/chioshinu/maroto/v2/pkg/components/page"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/components/text"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/test"
 	"github.com/stretchr/testify/assert"
 )
 

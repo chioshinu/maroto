@@ -1,9 +1,9 @@
 # Cell Style
 
 ## GoDoc
-* [component : Col : WithStyle](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/col#Col.WithStyle)
-* [component : Row : WithStyle](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/row#Row.WithStyle)
-* [props : Cell](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/props#Cell)
+* [component : Col : WithStyle](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/col#Col.WithStyle)
+* [component : Row : WithStyle](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/row#Row.WithStyle)
+* [props : Cell](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/props#Cell)
 
 ## Code Example
 [filename](../../assets/examples/cellstyle/v2/main.go ':include :type=code')

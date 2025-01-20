@@ -5,11 +5,11 @@ package code
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 type QrCode struct {
@@ -85,3 +85,5 @@ func (q *QrCode) GetHeight(provider core.Provider, cell *entity.Cell) float64 {
 func (q *QrCode) SetConfig(config *entity.Config) {
 	q.config = config
 }
+
+func (q *QrCode) SetTransform(transform core.TextTransformer) {}

@@ -1,9 +1,9 @@
 # Add Page
 
 ## GoDoc
-* [constructor : New](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/components/page#New) 
-* [interface : Page](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/core#Page)
-* [props : Page](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/props#Page)
+* [constructor : New](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/components/page#New) 
+* [interface : Page](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/core#Page)
+* [props : Page](https://pkg.go.dev/github.com/chioshinu/maroto/v2/pkg/props#Page)
 
 ## Code Example
 [filename](../../assets/examples/addpage/v2/main.go  ':include :type=code')

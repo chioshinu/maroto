@@ -2,17 +2,21 @@
 package page
 
 import (
+	"fmt"
+	"strings"
+
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 type Page struct {
 	number int
 	total  int
 	rows   []core.Row
+	footer []core.Row
 	config *entity.Config
 	prop   props.PageNumber
 }
@@ -45,8 +49,16 @@ func (p *Page) Render(provider core.Provider, cell entity.Cell) {
 		innerCell.Y += row.GetHeight(provider, &innerCell)
 	}
 
-	if p.prop.Pattern != "" {
-		provider.AddText(p.prop.GetPageString(p.number, p.total), &cell, p.prop.GetNumberTextProp(cell.Height))
+	for _, row := range p.footer {
+		if p.prop.Pattern != "" {
+			for _, col := range row.GetColumns() {
+				col.SetTransform(func(v string) string {
+					return strings.ReplaceAll(v, p.prop.Pattern, fmt.Sprintf("%d", p.number))
+				})
+			}
+		}
+		row.Render(provider, innerCell)
+		innerCell.Y += row.GetHeight(provider, &innerCell)
 	}
 }
 
@@ -73,6 +85,11 @@ func (p *Page) GetNumber() int {
 func (p *Page) Add(rows ...core.Row) core.Page {
 	p.rows = append(p.rows, rows...)
 	return p
+}
+
+// AddFooter adds one or more rows to the Page footer.
+func (p *Page) AddFooter(rows ...core.Row) {
+	p.footer = append(p.footer, rows...)
 }
 
 // GetRows returns the rows of the Page.

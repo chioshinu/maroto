@@ -4,17 +4,18 @@ package col
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 type Col struct {
-	size       int
-	isMax      bool
-	components []core.Component
-	config     *entity.Config
-	style      *props.Cell
+	size        int
+	isMax       bool
+	components  []core.Component
+	config      *entity.Config
+	style       *props.Cell
+	transformer core.TextTransformer
 }
 
 // New is responsible to create an instance of core.Col.
@@ -73,6 +74,9 @@ func (c *Col) Render(provider core.Provider, cell entity.Cell, createCell bool) 
 	}
 
 	for _, component := range c.components {
+		if c.transformer != nil {
+			component.SetTransform(c.transformer)
+		}
 		component.Render(provider, &cell)
 	}
 }
@@ -105,4 +109,8 @@ func (c *Col) GetHeight(provider core.Provider, cell *entity.Cell) float64 {
 		}
 	}
 	return greaterHeight
+}
+
+func (c *Col) SetTransform(transform core.TextTransformer) {
+	c.transformer = transform
 }

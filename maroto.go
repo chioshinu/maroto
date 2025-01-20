@@ -3,24 +3,24 @@ package maroto
 import (
 	"errors"
 
+	"github.com/chioshinu/maroto/v2/pkg/consts/generation"
 	"github.com/f-amaral/go-async/pool"
-	"github.com/johnfercher/maroto/v2/pkg/consts/generation"
 
-	"github.com/johnfercher/maroto/v2/internal/cache"
+	"github.com/chioshinu/maroto/v2/internal/cache"
 
-	"github.com/johnfercher/maroto/v2/internal/providers/gofpdf"
+	"github.com/chioshinu/maroto/v2/internal/providers/gofpdf"
 
-	"github.com/johnfercher/maroto/v2/pkg/merge"
+	"github.com/chioshinu/maroto/v2/pkg/merge"
 
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
 
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/page"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/config"
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/page"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/config"
+	"github.com/chioshinu/maroto/v2/pkg/core"
 )
 
 type Maroto struct {
@@ -239,7 +239,7 @@ func (m *Maroto) fillPageToAddNew() {
 	spaceRow.Add(c)
 
 	m.rows = append(m.rows, spaceRow)
-	m.rows = append(m.rows, m.footer...)
+	// m.rows = append(m.rows, m.footer...)
 
 	var p core.Page
 	if m.config.PageNumber != nil {
@@ -250,6 +250,7 @@ func (m *Maroto) fillPageToAddNew() {
 
 	p.SetConfig(m.config)
 	p.Add(m.rows...)
+	p.AddFooter(m.footer...)
 
 	m.pages = append(m.pages, p)
 	m.rows = nil

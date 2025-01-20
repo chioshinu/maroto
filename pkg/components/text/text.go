@@ -4,17 +4,18 @@ package text
 import (
 	"github.com/johnfercher/go-tree/node"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/col"
-	"github.com/johnfercher/maroto/v2/pkg/components/row"
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/chioshinu/maroto/v2/pkg/components/col"
+	"github.com/chioshinu/maroto/v2/pkg/components/row"
+	"github.com/chioshinu/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core/entity"
+	"github.com/chioshinu/maroto/v2/pkg/props"
 )
 
 type Text struct {
-	value  string
-	prop   props.Text
-	config *entity.Config
+	value       string
+	prop        props.Text
+	config      *entity.Config
+	transformer core.TextTransformer
 }
 
 // New is responsible to create an instance of a Text.
@@ -77,5 +78,13 @@ func (t *Text) SetConfig(config *entity.Config) {
 
 // Render renders a Text into a PDF context.
 func (t *Text) Render(provider core.Provider, cell *entity.Cell) {
-	provider.AddText(t.value, cell, &t.prop)
+	v := t.value
+	if t.transformer != nil {
+		v = t.transformer(v)
+	}
+	provider.AddText(v, cell, &t.prop)
+}
+
+func (t *Text) SetTransform(transform core.TextTransformer) {
+	t.transformer = transform
 }

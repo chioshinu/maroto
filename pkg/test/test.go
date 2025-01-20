@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/chioshinu/maroto/v2/pkg/core"
 )
 
 var (
